@@ -1,3 +1,5 @@
+// somar.js
+
 const somar = require("./somar")
 
 test('somar 1 + 2 é igual a 3', ()=>{
@@ -42,4 +44,9 @@ test('Verificação de entrada inválida, A + 3 = Caractere Inválido', ()=>{
 // Caso de Teste 8
 test('Soma de números grandes, 999999999 + 999999999 = 1999999998', ()=>{
     expect(somar(999999999,999999999)).toBe(1999999998)
+})
+
+// Caso de Teste 9
+test('Somar de números inteiro positivo, "1" + "2" = 3',()=>{
+    expect(somar("1","2")).toBe(3)
 })
